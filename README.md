@@ -98,8 +98,8 @@ para agregar más workloads. ✅
 ### Paso 1 — Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/prometheus-openclaw-monitor
-cd prometheus-openclaw-monitor
+git clone https://github.com/AndresDvst/Prometheus-Openclaw-Monitor.git
+cd Prometheus-Openclaw-Monitor
 ```
 
 ### Paso 2 — Levantar el stack de monitoreo
@@ -143,7 +143,7 @@ cp auto-alert.sh ~/auto-alert.sh
 chmod +x ~/auto-alert.sh
 
 # Ajustar el path de openclaw al usuario correcto
-sed -i 's/AndreDvst/TU_USUARIO/g' ~/auto-alert.sh
+sed -i 's/TU_USUARIO/g' ~/auto-alert.sh
 
 # Activar cron cada 30 minutos
 (crontab -l 2>/dev/null; echo "*/30 * * * * /home/TU_USUARIO/auto-alert.sh") | crontab -
